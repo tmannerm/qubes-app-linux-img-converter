@@ -24,25 +24,25 @@
 #
 
 
-Name:		qubes-img-converter
-Version:	@VERSION@
-Release:	1%{dist}
-Summary:	The Qubes service for converting untrusted images into trusted ones
+Name:       qubes-img-converter
+Version:    @VERSION@
+Release:    1%{dist}
+Summary:    The Qubes service for converting untrusted images into trusted ones
 
-Group:		Qubes
-Vendor:		Invisible Things Lab
-License:	GPL
-URL:		http://www.qubes-os.org
+Group:      Qubes
+Vendor:     Invisible Things Lab
+License:    GPL
+URL:        http://www.qubes-os.org
 
-Requires:	qubes-utils
+Requires:   qubes-utils
 %if 0%{?suse_version} == 1500 && 0%{?is_opensuse}
-Requires:	python3-nautilus
+Requires:   python3-nautilus
 %else
-Requires:	nautilus-python
+Requires:   nautilus-python
 %endif
-Requires:	python3-qubesimgconverter
+Requires:   python3-qubesimgconverter
 
-Source0: %{name}-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 
 %description
 The Qubes service for converting untrusted images into trusted ones.
